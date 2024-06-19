@@ -1,0 +1,85 @@
+.grid-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  background-color: #d0d0d0;
+  border-color: #706F6F;
+  border-radius: 30px;
+  margin-top: 2rem;
+}
+
+.grid-item {
+  padding: 20px;
+  text-align: left;
+}
+
+.contorno {
+  overflow: auto;
+  font-family: Arial, sans-serif;
+  color: white;
+  padding: 10px 27px;
+  border: solid #706F6F;
+  height: 70%;
+  width: 90%;
+  background-color: #706F6F;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 5rem;
+  margin-top: 4rem;
+}
+
+
+
+.caja1 {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #706F6F;
+  height: 2rem;
+  width: 20rem;
+  align-self: right;
+  border-radius: 30px;
+  margin-left: 20rem;
+}
+
+input::placeholder {
+  font-size: 20px;
+  opacity: 0.5;
+  text-align: start;
+  padding-left: 15px;
+  font-weight: bolder;
+}
+
+.lblnombre {
+  color: #706F6F;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.lblestado {
+  color: #706F6F;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.btn1 {
+  background-color: #078777;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: white;
+  padding: 10px 27px;
+  border: solid #706F6F;
+  border-radius: 30px;
+  text-decoration: none;
+  align-self: end;
+  margin: 2rem;
+}

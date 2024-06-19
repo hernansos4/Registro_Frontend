@@ -1,0 +1,12 @@
+<div class="nav-bar">
+    <img src="assets/images/logo.jpg" class="logo">
+    <a routerLink="clases/organigrama" class="link">Organigrama</a>
+    <a routerLink="clases/resumen" class="link">Resumen de Clases</a>
+    <a routerLink="clases/registro" class="link">Registro de Clases</a>
+    <p (click)="logout()" class="p">Cerrar Sesion</p>
+    <label *ngIf="carrera?.nombre && carrera?.username">
+        {{carrera.nombre}}
+        <p></p>
+        {{carrera.username}}
+    </label>
+</div>

@@ -1,0 +1,137 @@
+.contorno {
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 10px 27px;
+    border: solid #706F6F;
+    height: 680px;
+    width: 485px;
+    background-color: #706F6F;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 500px;
+}
+
+.mi-dropdown .p-dropdown {
+    background-color: #078777;
+    font-family: Arial, sans-serif;
+    color: white;
+    border: none;
+    min-width: 100%;
+    height: 3rem;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.mi-dropdown .p-dropdown .p-dropdown-label.p-placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+
+.mi-dropdown .p-dropdown .p-dropdown-trigger {
+    color: white;
+    cursor: pointer;
+}
+
+
+.mi-dropdown .p-dropdown .p-dropdown-label {
+    color: white;
+}
+
+/* 
+Estilo para el panel del dropdown cuando está abierto */
+.mi-dropdown .p-dropdown-panel {
+    background-color: #078777;
+    color: white;
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: text;
+    border-radius: 20px;
+}
+
+
+.volver {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: end;
+}
+
+.volver>* {
+    justify-self: end;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+.titulo {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+.cajas {
+    background-color: #078777;
+    color: white;
+    border: none;
+    min-width: 100%;
+    height: 3rem;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+
+.lbl {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: start;
+    margin: 4px 20px;
+}
+
+
+
+.contenedor-botones {
+    display: flex;
+    justify-content: center;
+    margin: 30px 85px;
+}
+
+.X {
+    background-color: #706F6F;
+    border: none;
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.boton {
+    background-color: #35C043;
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0px 85px 0 85px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}

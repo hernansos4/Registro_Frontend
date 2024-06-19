@@ -1,0 +1,20 @@
+
+
+<div class="contorno">
+    
+    <h1 class="titulo">Iniciar Sesión</h1>
+    <label for="" class="lblnombre">Nombre de Usuario</label>
+    <p></p>
+    <input type="text" [(ngModel)]="nombre" placeholder="Nombre de Usuario" class="caja1">
+    <p></p>
+    <label for="" class="lblcontraseña">Contraseña</label>
+    <p></p>
+    <input type="password"  placeholder="Contraseña" class="caja2" [(ngModel)]="password" >
+    <div class="contenedor-botones">
+        <button class="boton1" (click)="login()">Iniciar Sesión</button>
+        <button class="boton2" [routerLink]="'/auth/registro'">Registrarse</button>
+    </div>
+</div>
+
+
+

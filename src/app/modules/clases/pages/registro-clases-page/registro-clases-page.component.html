@@ -1,0 +1,32 @@
+<div class="contorno">
+    <div class="grid-container">
+        <h1 class="titulo">Registro de Clases</h1>
+        <div class="input-group">
+            <label class="lblclase">Nombre de la Clase</label>
+            <input class="cajas" placeholder="Nombre de la Clase" [(ngModel)]="nombre">
+        </div>
+        <div class="input-group">
+            <label class="lbluv">Unidades Valorativas</label>
+            <input class="cajas" placeholder="Unidades Valorativas" [(ngModel)]="unidades_valorativas">
+        </div>
+        <div class="input-group">
+            <label class="lblcarrera">Carrera</label>
+            <input class="cajas" placeholder="Carrera" [(ngModel)]="name_carrera" disabled>
+        </div>
+        <div class="input-group">
+            <label class="lblcp1">Clase Prerequisito</label>
+            <p-dropdown class="mi-dropdown" [options]="clases" [(ngModel)]="selectedClase" optionLabel="nombre"
+                [showClear]="true" placeholder="Seleccione una Clase"></p-dropdown>
+        </div>
+        <div class="input-group">
+
+        </div>
+        <div class="input-group">
+            <p></p>
+            <button class="boton" (click)="registrar()">Registrar</button>
+        </div>
+
+    </div>
+</div>
+
+<p-toast></p-toast>

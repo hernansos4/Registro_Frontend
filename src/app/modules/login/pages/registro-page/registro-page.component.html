@@ -1,0 +1,45 @@
+<div class="contorno">
+    <div class="volver">
+        <button class="X" [routerLink]="'/auth/login'"><svg height="64px" width="40px" version="1.1" id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 499.2 499.2"
+                xml:space="preserve" fill="#000000">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path style="fill:#044e10;"
+                        d="M489.6,229.6c-10.4,20.8-29.6,37.6-52.8,44c19.2,45.6,21.6,96.8,2.4,142.4c34.4-11.2,60-43.2,60-81.6 v-68.8C499.2,253.6,495.2,241.6,489.6,229.6z">
+                    </path>
+                    <path style="fill:#14c296;"
+                        d="M413.6,177.6h-228c-47.2,0-86.4,38.4-86.4,85.6v58.4h232l0,0h82.4c33.6,0,64,20.8,77.6,49.6 c6.4-14.4,8-25.6,8-39.2v-68.8C499.2,216,460.8,177.6,413.6,177.6z">
+                    </path>
+                    <polygon style="fill:#2aea86;"
+                        points="123.2,249.6 219.2,153.6 219.2,30.4 0,249.6 219.2,468.8 219.2,345.6 "></polygon>
+                    <polyline style="fill:#14c296;" points="1.6,249.6 219.2,468.8 219.2,345.6 124.8,249.6 219.2,153.6 ">
+                    </polyline>
+                </g>
+            </svg>
+        </button>
+    </div>
+    <h1 class="titulo">Registro de Usuario</h1>
+    <label for="" class="lbl">Nombre de Usuario</label>
+    <p></p>
+    <input type="text" placeholder="Nombre de Usuario" class="cajas" [(ngModel)]="username">
+    <p></p>
+    <label for="" class="lbl">Carrera</label>
+    <p></p>
+    <p-dropdown class="mi-dropdown" [options]="carreras" [(ngModel)]="selectedCarrera" optionLabel="nombre"
+        [showClear]="true" placeholder="Seleccione una carrera"></p-dropdown>
+    <p></p>
+    <label for="" class="lbl">Contraseña</label>
+    <p></p>
+    <input type="password" placeholder="Contraseña" class="cajas" [(ngModel)]="password">
+    <p></p>
+    <label for="" class="lbl">Confirmar Contraseña</label>
+    <p></p>
+    <input type="password" placeholder="Confirmar Contraseña" class="cajas" [(ngModel)]="confirmar_password">
+    <div class="contenedor-botones">
+        <p *ngIf="!(confirmar_password == password)">Las Contraseñas no coinsiden</p>
+        <button (click)="setUser()" *ngIf="confirmar_password == password" class="boton">Registrarse</button>
+    </div>
+</div>
+<p-toast></p-toast>

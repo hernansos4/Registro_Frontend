@@ -1,0 +1,40 @@
+<div class="contorno">
+
+    <div class="grid-header">
+        <h1 class="">Resumen de Clases</h1>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <label class="lblnombre">Nombre de la Clase</label>
+
+        </div>
+        <div class="grid-item">
+            <label class="lblestado">Estado de la Clase</label>
+
+        </div>
+    </div>
+    <div class="grid-container" *ngFor="let item of clases; let i = index">
+        <div class="grid-item">
+            <label class="lblnombre"> {{item.nombre}}</label>
+
+        </div>
+        <div class="grid-item">
+
+            <input type="radio" [value]="'aprobado'" [(ngModel)]="item.estado_clase" [name]="'estado' + i"
+                id="'aprobado' + i">
+            <label [for]="'aprobado' + i" class="lblestado">Aprobada</label>
+            <input type="radio" [value]="'pendiente'" [(ngModel)]="item.estado_clase" [name]="'estado' + i"
+                id="'pendiente' + i">
+            <label [for]="'pendiente' + i" class="lblestado">Pendiente</label>
+            <input type="radio" [value]="'reprobado'" [(ngModel)]="item.estado_clase" [name]="'estado' + i"
+                id="'reprobado' + i">
+            <label [for]="'reprobado' + i" class="lblestado">Reprobada</label>
+            <button class="btn1" (click)="updateClase(item.id, item.estado_clase ||'pendiente')">Guardar</button>
+        </div>
+
+    </div>
+
+
+
+</div>
+<p-toast></p-toast>

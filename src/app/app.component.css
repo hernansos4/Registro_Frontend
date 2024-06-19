@@ -1,0 +1,13 @@
+.boton-bonito {
+    background-color: #4CAF50; /* Color de fondo */
+    border: none; /* Sin bordes */
+    color: white; /* Color del texto */
+    padding: 15px 32px; /* Espaciado alrededor del texto */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración en el texto */
+    display: inline-block; /* Para que se comporte como un bloque pero se alinee como un elemento en línea */
+    font-size: 16px; /* Tamaño del texto */
+    margin: 4px 2px; /* Margen alrededor del botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima */
+    border-radius: 12px; /* Bordes redondeados */
+}

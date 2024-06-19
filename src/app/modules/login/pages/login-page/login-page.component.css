@@ -1,0 +1,123 @@
+.contorno {
+    font-family: Arial, sans-serif;
+    padding: 10px 27px;
+    border: solid #706F6F;
+    height: 550px;
+    width: 400px;
+    background-color: #706F6F;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 35vw;
+}
+
+.titulo {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 60px;
+
+}
+
+.caja1 {
+    background-color: #078777;
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 30px;
+    cursor: text;
+    border-radius: 20px;
+
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+.caja2 {
+    background-color: #078777;
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 30px;
+    cursor: text;
+    border-radius: 20px;
+}
+
+.lblnombre {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin: 2px 60px;
+}
+
+.lblcontraseña {
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin: 4px 60px;
+}
+
+.contenedor-botones {
+    display: flex;
+    justify-content: center;
+
+}
+
+.boton1 {
+
+    background-color: #35C043;
+    border: none;
+    color: white;
+    padding: 8px 22px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 50px 5px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.boton2 {
+    background-color: #35C043;
+    border: none;
+    color: white;
+    padding: 8px 27px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 50px 5px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.tuto {
+    background-color: #078777;
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 60px;
+    cursor: text;
+    border-radius: 20px;
+}
